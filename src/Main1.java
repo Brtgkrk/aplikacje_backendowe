@@ -1,3 +1,5 @@
+//https://dirask.com/posts/WSEI-2021-2022-lato-labN-2-PROGN-Programowanie-aplikacji-back-endowych-lab-1-jQk38D
+
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
