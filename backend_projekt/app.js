@@ -14,7 +14,7 @@ mongoose
   })
   .then(() => console.log('DB connection successful'));
 
-// ROU
+// ROUTER
 
 app.use('/api/v1/courses', courseRouter);
 app.use('/api/v1/users', userRouter);
