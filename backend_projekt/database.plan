@@ -1,0 +1,38 @@
+Users:
+- name
+- email
+- password
+- passwordConfirm
+
+Courses:
+- id {}
+- name {string, required}
+- description {string}
+- difficulty {string}
+- rating {number, default = 0}
+- length {number}
+- opinions {opinion}
+- price {number, required}
+
+Opinion:
+- id {}
+- courseId
+- rating {number, required}
+- headline {string}
+- description {string}
+
+
+
++ 2 aditional tables
+
+
+POSTMAN
+- add POST SignUp:
+- add GET Get All Users
+- add Get Get User
+
+NPM
+npm i bcryptjs
+npm i jsonwebtoken
+
+copy all utils
