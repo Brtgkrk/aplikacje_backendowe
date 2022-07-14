@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const User = require('./userModel');
 
 const courseSchema = new mongoose.Schema({
     name: {
@@ -14,8 +13,7 @@ const courseSchema = new mongoose.Schema({
     price: {
       type: Number,
       required: [true, 'A course must have a price']
-    },
-    guides: Array
+    }
   });
 
   const Course = mongoose.model('Course', courseSchema);

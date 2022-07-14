@@ -5,7 +5,7 @@ const authController = require('./../controllers/authController');
 const router = express.Router();
 
 router.route('/')
-    .get(authController.protect, courseController.getAllCourses)
+    .get(courseController.getAllCourses)
     .post(courseController.createCourse);
 
 router.route('/:id')
