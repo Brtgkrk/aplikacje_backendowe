@@ -6,8 +6,8 @@ const AppError = require('./../utils/appError');
 
 const signToken = id => {
     console.log(process.env.JWT_SECRET)
-    return jwt.sign({ id }, process.env.JWT_SECRET, {
-      expiresIn: process.env.JWT_EXPIRES_IN
+    return jwt.sign({ id }, 'Wdd2^dsDhad5s321WSasja3h&j@+zzS@AD422AJSD', {
+      expiresIn: '90d'
     });
   };
 
