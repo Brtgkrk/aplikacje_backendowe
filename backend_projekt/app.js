@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 
 const courseRouter = require('./routes/courseRoutes');
 const userRouter = require('./routes/userRoutes');
+const opinionRouter = require('./routes/opinionRoutes');
 
 const app = express();
 app.use(express.json());
@@ -18,6 +19,7 @@ mongoose
 
 app.use('/api/v1/courses', courseRouter);
 app.use('/api/v1/users', userRouter);
+app.use('/api/v1/opinions', opinionRouter);
 
 const port = 3000;
 app.listen(port, () => {
